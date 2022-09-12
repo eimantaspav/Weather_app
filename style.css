@@ -1,0 +1,115 @@
+/* ---------------- */
+/* Reset            */
+/* ---------------- */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100hv;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make forms easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: #222831;
+    border-radius: 4px;
+    max-width: 27rem;
+}
+
+.details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #f2f2f2
+}
+
+h1 {
+    line-height: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #f96d00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border-radius: 3px;
+    border: solid 1px #f2f2f2;
+}
+label {color: #f2f2f2}
+
+img {
+    margin: 0 auto;
+}
