@@ -68,7 +68,9 @@ select {
 body {
     display: flex;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: #fff;
+  letter-spacing: 0.1rem;
+
 }
 
 .container {
@@ -77,9 +79,12 @@ body {
     margin-top: 3rem;
     padding: 2rem;
     gap: 1rem;
-    background-color: #222831;
     border-radius: 4px;
     max-width: 27rem;
+    border: 1px solid #C3F8FF;
+    box-shadow: 1px 1px 0.5rem #719ECE;
+
+    
 }
 
 .details {
@@ -87,7 +92,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    color: #f2f2f2
 }
 
 h1 {
@@ -95,7 +99,10 @@ h1 {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    color: #f96d00;
+}
+
+h1, .details, label {
+    color: #0F3460;
 }
 
 form {
@@ -106,9 +113,15 @@ form {
 
 input {
     border-radius: 3px;
-    border: solid 1px #f2f2f2;
+    border: solid 2px #4c4c6da1;
 }
-label {color: #f2f2f2}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #FBDF07;
+    box-shadow: 0 0 0.2rem #FBDF07;
+  }
+
 
 img {
     margin: 0 auto;
